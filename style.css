@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Black.ttf");
+  src: url("fonts/Poppins-BlackItalic.ttf");
+  src: url("fonts/Poppins-Bold.ttf");
+  src: url("fonts/Poppins-BoldItalic.ttf");
+  src: url("fonts/Poppins-ExtraBold.ttf");
+  src: url("fonts/Poppins-ExtraBoldItalic.ttf");
+  src: url("fonts/Poppins-ExtraLight.ttf");
+  src: url("fonts/Poppins-ExtraLightItalic.ttf");
+  src: url("fonts/Poppins-Italic.ttf");
+  src: url("fonts/Poppins-Light.ttf");
+  src: url("fonts/Poppins-LightItalic.ttf");
+  src: url("fonts/Poppins-Medium.ttf");
+}
+
+body {
+  background-color: #e3f2fd;
+}
+
+.colors-cont {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 30px auto 0;
+  gap: 30px;
+}
+
+@media (max-width: 1099px) {
+  .colors-cont {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .colors-cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .colors-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .colors-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 350px) {
+  .colors-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.color-box .perview {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.color-box {
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.color-box .hex {
+  margin-top: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.color-box .hex:hover {
+  color: rgb(0, 145, 255);
+}
+
+.add {
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #8a6cff;
+  color: #fff;
+  border: 2px solid #eee;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 6px;
+  outline: none;
+}
+
+.add:hover {
+  filter: contrast(1.9);
+}
+
+#copy {
+  position: fixed;
+  z-index: -9999;
+  top: 5000%;
+}
+
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 40px;
+}
+
+.container input {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+}
