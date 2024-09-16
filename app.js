@@ -59,6 +59,7 @@ add.onclick = function () {
     number.placeholder = `Colors Number..`;
   } else {
     number.placeholder = `Where Is Number!?`;
+    number.focus();
   }
 };
 
